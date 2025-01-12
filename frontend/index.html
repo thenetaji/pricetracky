@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- General Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="rgb(0,0,0)" />
+
+    <!-- Main Site Information -->
+    <meta name="application-name" content="" />
+    <meta name="description" content="" />
+
+    <!-- Page Information -->
+    <meta itemprop="name" content="" />
+    <meta itemprop="description" content="" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="Your site tagline" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+
+    <!-- Twitter Tags -->
+    <meta property="twitter:site" content="@your_twitter/x_username" />
+    <meta property="twitter:title" content="Site name" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="icons/" />
+    <meta property="twitter:url" content="" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "{organization_url}#organization",
+            "name": "{organization_name}",
+            "url": "{organization_url}",
+            "sameAs": ["{social_media_url_1}", "{social_media_url_2}"],
+            "logo": {
+              "@type": "ImageObject",
+              "url": "{organization_logo_url}"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "{website_url}#website",
+            "url": "{website_url}",
+            "name": "{website_name}",
+            "publisher": {
+              "@id": "{organization_url}#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "{webpage_url}#webpage",
+            "url": "{webpage_url}",
+            "name": "{webpage_title}",
+            "datePublished": "{date_published}",
+            "dateModified": "{date_modified}",
+            "isPartOf": {
+              "@id": "{website_url}#website"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "{primary_image_url}"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Language Links -->
+    <link rel="alternate" href="" hreflang="en" />
+
+    <!-- Favicon and Icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+
+    <!-- Apple Touch Icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="icons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon-180x180.png"
+    />
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="icons/tile-144x144.png" />
+
+    <!-- Site Verification -->
+    <meta name="google-site-verification" content="" />
+    <meta name="msvalidate.01" content="" />
+    <meta name="yandex-verification" content="" />
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="" />
+
+    <!-- Stylesheet and Script (For Development) -->
+    <link rel="stylesheet" href="/src/css/index.css" />
+    <script type="module" src="/src/js/index.js" defer></script>
+
+    <title></title>
+
+    <script>
+      partytown = {
+        debug: true,
+        forward: ["dataLayer.push"],
+      };
+    </script>
+    <script
+      type="text/javascript"
+      src="/~partytown/partytown.js"
+      async
+    ></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=your_gtag_id"
+    ></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "your_gtag");
+    </script>
+  </head>
+  <body></body>
+</html>
