@@ -2,9 +2,13 @@ import express from "express";
 import cors from "cors";
 import expressRateLimit from "express-rate-limit";
 import helmet from "helmet";
+import morgan from "morgan";
 const app = express();
 
+import router from "./routes.js";
+
 //middlewares
+app.use(morgan("dev"));
 const corsOptions = {
   origin: "*",
 };
@@ -22,9 +26,11 @@ app.use(
 );
 app.use(express.json());
 
+//main app logic
+app.use("/", router);
+
 //server initialization
 const port = process.env.PORT || 2626;
 app.listen(port, () => {
-  console.log(`Server is at port ${port}... :)`);
+  console.info(`Server is at port ${port}... :)`);
 });
-

@@ -1,1 +1,4 @@
 node_modules/
+.env
+/api/scraper/logger.js
+/api/scraper/error.js
