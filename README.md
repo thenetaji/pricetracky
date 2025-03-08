@@ -1,2 +1,4 @@
-# Scaffolder 
-# A mono repo project template 
+# Pricetracky :- An ecommerce price tracker...
+
+## Supported sites
+  Flipkart

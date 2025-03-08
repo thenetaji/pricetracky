@@ -30,3 +30,9 @@ export class InputValidationError extends CustomError {
     super("Input validation failed some fields are missing", details);
   }
 }
+
+export class DatabaseError extends CustomError {
+  constructor(details) {
+    super("Database operation failed", details);
+  }
+}
